@@ -13,5 +13,4 @@ pip install -r requirements.txt
 exec gunicorn -w 4 -b 0.0.0.0:8000 app:application \
   --pid gunicorn.pid \
   --access-logfile gunicorn-access.log \
-  --error-logfile gunicorn-error.log \
-  --daemon
+  --error-logfile gunicorn-error.log
